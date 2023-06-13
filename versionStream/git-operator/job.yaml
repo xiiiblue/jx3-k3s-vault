@@ -25,6 +25,12 @@ spec:
           env:
             - name: XDG_CONFIG_HOME
               value: /workspace/xdg_config
+            - name: HTTP_PROXY
+              value: "socks5://10.193.36.33:7890/"
+            - name: HTTPS_PROXY
+              value: "socks5://10.193.36.33:7890/"
+            - name: NO_PROXY
+              value: "127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,harbor.dubhe,10.193.36.252"
           envFrom:
             - secretRef:
                 name: jx-boot-job-env-vars
@@ -43,6 +49,12 @@ spec:
           env:
             - name: XDG_CONFIG_HOME
               value: /workspace/xdg_config
+            - name: HTTP_PROXY
+              value: "socks5://10.193.36.33:7890/"
+            - name: HTTPS_PROXY
+              value: "socks5://10.193.36.33:7890/"
+            - name: NO_PROXY
+              value: "127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16,harbor.dubhe,10.193.36.252"
           envFrom:
             - secretRef:
                 name: jx-boot-job-env-vars
