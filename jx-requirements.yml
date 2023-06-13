@@ -30,5 +30,6 @@ spec:
       production: false
   repository: bucketrepo
   secretStorage: vault
-  vault: {}
+  vault:
+    url: http://10.193.35.11:8200
   webhook: lighthouse
